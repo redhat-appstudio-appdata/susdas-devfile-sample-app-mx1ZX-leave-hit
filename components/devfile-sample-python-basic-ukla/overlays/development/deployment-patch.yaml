@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-ukla
+  namespace: susdas-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:83a17f2a497167347b1f5d9a1a63521a06d894a9b08c8013df9f6fdacd41b983
+        name: my-python
+        resources: {}
+status: {}
